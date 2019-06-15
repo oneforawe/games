@@ -1,0 +1,10 @@
+# text-editor backup files
+*~
+
+# Mac Desktop Services Store customization files
+.DS_Store
+
+# Specific sub-folders
+Hangman/Original
+Hangman/Others
+
