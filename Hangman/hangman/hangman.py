@@ -11,7 +11,6 @@ To start, execute the following in a shell terminal:
 python3 hangman.py
 """
 
-
 import os
 import random
 import time
