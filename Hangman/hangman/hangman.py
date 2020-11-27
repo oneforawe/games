@@ -104,7 +104,7 @@ class Hangman:
         # allowing the user to quit and exit the game early.
         while valid == False:
             print('\nEnter a letter or "quit" to exit.')
-            if forced_letter is not '':
+            if forced_letter != '':
                 letter = forced_letter
             else:
                 letter = input('  What\'s your guess? ')
@@ -150,7 +150,7 @@ class Hangman:
 
     @staticmethod
     def clean_input_word(string : str):
-        if string is not '' and not string.isalpha():
+        if string != '' and not string.isalpha():
             print(f'\nThe input word entered: {string}')
             print('The input word entered ' + \
                   'is not made of alphabetic characters.')
@@ -162,8 +162,12 @@ class Hangman:
 
     @staticmethod
     def announce_game():
-        print('\nThis is the game Hangman.')
-        print('-- Correctly guess the letters ' + \
+        print('   |-------------------------------|')
+        print('   |         H A N G M A N         |')
+        print('   |-------------------------------|')
+        print('')
+        print('   This is the game Hangman.')
+        print('    -- Correctly guess the letters ' + \
               'of the secret word, or else the man gets hung!')
 
     @staticmethod
